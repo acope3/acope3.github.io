@@ -54,7 +54,7 @@
 				{% if page.categories.first != 'home' %}
 				<a class="navbar-brand" href="/">
 					<img class="logo navbar-brand d-inline-block align-top ml-0 mr-1" src="/images/logo.svg">
-					bedford lab
+					Alex Cope, PhD
 				</a>
 				{% else %}
 				<a class="navbar-brand" href="/">
@@ -65,32 +65,38 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav nav-pills ml-auto">
-						{% if page.categories.first == 'blog' %}
-						<li class="nav-link active">
-						{% else %}
-						<li class="nav-link">
-						{% endif %}
-						<a class="mx-1" href="/blog/">blog</a>
 						</li>
 						{% if page.categories.first == 'papers' %}
 						<li class="nav-link active">
 						{% else %}
 						<li class="nav-link">
 						{% endif %}
-						<a class="mx-1" href="/papers/">papers</a>
+						<a class="mx-1" href="/papers/">Papers</a>
 						</li>
 						{% if page.categories.first == 'projects' %}
 						<li class="nav-link active">
 						{% else %}
 						<li class="nav-link">
 						{% endif %}
-						<a class="mx-1" href="/projects/">projects</a></li>
+						<a class="mx-1" href="/research/">Research interests</a></li>
+						{% if page.categories.first == 'software' %}
+						<li class="nav-link active">
+						{% else %}
+						<li class="nav-link">
+						{% endif %}
+						<a class="mx-1" href="/software/">Software</a></li>
 						{% if page.categories.first == 'team' %}
 						<li class="nav-link active">
 						{% else %}
 						<li class="nav-link">
 						{% endif %}
-						<a class="mx-1" href="/team/">team</a></li>
+						<a class="mx-1" href="/team/">Team</a></li>
+						{% if page.categories.first == 'blog' %}
+						<li class="nav-link active">
+						{% else %}
+						<li class="nav-link">
+						{% endif %}
+						<a class="mx-1" href="/blog/">Blog</a>
 					</ul>
 				</div>
 			</div>

@@ -1,0 +1,57 @@
+---
+layout: default
+---
+{% assign software = page %}
+<div class="blog-post">
+	<div class="row">
+		<div class="col-md-1"></div>	
+		<div class="col-md-10">
+			<div class="media">
+				<div class="media-body">
+					<div class="title media-heading">
+						<a href="{{ page.url }}" class="off">{{ page.title }}</a>
+					</div>
+					<p>
+<!--					<div class="smallhead">
+						{{ page.date | date_to_string }}
+						{% if author %}
+						by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
+						{% endif %}		
+					</div> -->
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1"></div>					
+	</div>
+
+
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">	
+			{% if page.image %}
+			<img width=500 class="offset" src="{{ page.image }}">
+			{% endif %}
+			<div class="smallhead">
+				{{ content }}
+	<div class="bigspacer"></div>
+			</div>
+	
+	<div class="bigspacer"></div>
+	<div class="bigspacer"></div>
+	<div class="bigspacer"></div>
+            
+        <div class="bigspacer"></div>
+		<div class="head">Publications</div>
+		<div class="spacer"></div>
+		{% for paper in site.categories.papers %}
+		{% if paper.tags contains software.tag %}
+		<p>{{ paper.title }}
+        <a href="{{ paper.url }}" class="note">{{ paper.ref }}</a>
+<!--        <a class="off">{{ paper.ref }}</a>-->
+		{% endif %}
+		{% endfor %}
+	
+	<div class="bigspacer"></div>
+	<div class="spacer"></div>	
+
+</div>

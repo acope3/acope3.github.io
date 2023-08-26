@@ -1,15 +1,15 @@
 ---
 layout: default
-title: bedford lab
+title: alexcope
 categories:
  - home
 ---
 
 <div class="row">
 	<div class="col-lg-12">
-		<object class="pull-left biglogo" data="/images/logo.svg" type="image/svg+xml"></object>
+		<object class="pull-left biglogo" data="/images/alex_cope_cropped.jpeg"></object>
 		<div class="bigtitle logobox">
-			bedford lab research
+			Alex Cope, Ph.D
 		</div>
 	</div>
 </div>
@@ -20,14 +20,7 @@ categories:
 	<div class="col-lg-12">
 		<div class="smallhead">
       <p>
-        The Bedford Lab at the <a class="off" href="http://www.fredhutch.org/">Fred Hutch</a> works at the
-        interface of evolution, epidemiology and virology. We apply computational and statistical methods to
-        sequence data to understand viral dynamics, and reconstruct patterns of epidemic growth and
-        geographic spread. We also link viral mutations to human population immunity and use this knowledge
-        to forecast evolutionary outcomes.
-      </p>
-      <p>
-        We maintain real-time views of pathogen evolution and epidemic spread at <a href="http://nextstrain.org">nextstrain.org</a>.
+        I am an INSPIRE (NIH-IRACDA) postdoctoral fellow currently working with Dr. Premal Shah (Department of Genetics, Rutgers University) and Matthew Pennell (Department of Quantitative and Computational Biology, University of Southern California). My research generally focuses on using computational methods to study evolution at the molecular level, both within and across species. Currently, my research focuses on (1) understanding the evolution of gene expression across species at multiple regulatory levels and (2) understanding how the bioenergetic costs related to gene expression shapes protein evolution, e.g. codon usage bias. 
       </p>
 		</div>
 	</div>
@@ -140,41 +133,6 @@ categories:
 
 <div class="spacer"></div>
 
-<div class="row">
-	<div class="col-lg-12">
-		<div class="head">
-			<a class="off" href="/projects/">Active projects</a>
-		</div>
-		<div class="spacer"></div>
-	</div>
-</div>
-
-<div class="row">
-	{% for project in site.data.projects limit:4 %}
-	<div class="col-lg-3 reduced-gutter">
-		<div class="pad-left">
-			<div class="note">
-				<i class="fa fa-edit fa-fw"></i>
-				<a class="off" href="{{ project.url }}">
-				{{ project.title }} - {{ project.description }}
-				</a>
-			</div>
-			<div class="smallspacer"></div>
-			<div class="smallnote">
-				Updated
-				<a class="off" href="{{ project.commits.first.url }}">
-				{{ project.commits.first.date | date: "%-d %b %Y" }}
-				</a>
-				by
-				<a class="off" href="{{ project.commits.first.author_url }}">
-				{{ project.commits.first.author_login }}
-				</a>
-			</div>
-			<div class="bigspacer"></div>
-		</div>
-	</div>
-	{% endfor %}
-</div>
 
 <div class="spacer"></div>
 
@@ -196,9 +154,6 @@ categories:
 					<i class="fa fa-angle-right"></i> <a class="off" href="{{ page.url }}">{{ page.title }}</a>
 				</li>
 				{% endfor %}
-				<li class="footernav list-inline-item">
-					<i class="fa fa-angle-right"></i> <a class="off" href="/talks/">Talks</a>
-				</li>
 			</ul>
 		</div>
 		<div class="spacer"></div>
