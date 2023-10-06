@@ -8,6 +8,7 @@ ref: Cope et al. 2018. Biochimica et Biophysica Acta (BBA) - Biomembranes.
 journal: "Biochimica et Biophysica Acta (BBA) - Biomembranes 1860(12): 2479-2485"
 pdf: 
 doi: https://doi.org/10.1016/j.bbamem.2018.09.010
+tags: CUB
 ---
 
 # Abstract

@@ -7,7 +7,7 @@ ref: Nikonorova et al. 2022. Current Biology.
 journal: "Current Biology 32(9): 1924-1936"
 pdf: 
 doi: https://doi.org/10.1016/j.cub.2022.03.005
-
+tags: proteomics bioinformatics
 ---
 
 # Abstract 

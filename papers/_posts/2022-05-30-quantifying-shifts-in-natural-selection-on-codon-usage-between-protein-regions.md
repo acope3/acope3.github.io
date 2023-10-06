@@ -7,6 +7,7 @@ ref: Cope and Gilchrist 2022. BMC Genomics.
 journal: "BMC Genomics 23(408)"
 pdf: 
 doi: https://doi.org/10.1186/s12864-022-08635-0
+tags: CUB
 ---
 
 # Abstract 

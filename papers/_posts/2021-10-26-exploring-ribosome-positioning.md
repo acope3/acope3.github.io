@@ -7,6 +7,7 @@ ref: Cope et al. 2021. Methods in Molecular Biology.
 journal: "Methods in Molecular Biology 2404: 83-110 "
 pdf: 
 doi: https://doi.org/10.1007/978-1-0716-1851-6_5
+tags: expression
 ---
 
 # Abstract 

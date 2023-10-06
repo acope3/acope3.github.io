@@ -8,6 +8,7 @@ ref: Cope et al. 2020. BMC Genomics
 journal: "BMC Genomics 21(370)"
 pdf: 
 doi: https://doi.org/10.1186/s12864-020-6761-3
+tags: expression
 ---
 
 # Abstract
