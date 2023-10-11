@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: Intragenomic variation in non-adaptive nucleotide biases causes underestimation of selection on synonymous codon usage
-authors: Cope AL, Shah P.
+authors: Cope AL, Shah P
 year: 2022
 ref: Cope and Shah 2022. Plos Genetics. 
 journal: "Plos Genetics 18(6): e1010256"
