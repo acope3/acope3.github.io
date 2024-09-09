@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: On the Decoupling of Evolutionary Changes in mRNA and Protein Levels
-authors: Jiang D, Cope, AL, Zhang G, Pennell M
+authors: Jiang D, Cope AL, Zhang G, Pennell M
 year: 2023
 ref: Jiang et al. Mol. Biol. and Evol. 
 journal: "Mol. Biol. and Evol. 40(8): msad169"
