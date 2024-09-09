@@ -12,7 +12,7 @@ Furthermore, CUB often varies between even closely-related species, but the evol
 Analyses of CUB often rely on heuristic measures of CUB that are difficult to interpret in explicitly evolutionary terms.
 By viewing CUB through an explicitly evolutionary lens using population genetics models of coding sequence evolution, I derived new insights into the roles of adaptive and non-adpative evolutionary processes shaping codon usage.
 Going forward, I will develop new models of CUB evolution that explicitly link biophysical models of molecular processes to models of evolutionary fitness.
-Using these biophysical-evolutionary models, I will derive new insights into the role of different evolutionary processes in shaping CUB and how these different processes interact and interply to shape proteome-wide CUB. dfdfdf
+Using these biophysical-evolutionary models, I will derive new insights into the role of different evolutionary processes in shaping CUB and how these different processes interact and interply to shape proteome-wide CUB.
 
 <!-- Relevant papers
 - [Akeju and Cope, bioRxiv, 2023](https://doi.org/10.1101/2022.10.26.513858)
