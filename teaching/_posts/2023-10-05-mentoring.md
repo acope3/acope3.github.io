@@ -11,5 +11,5 @@ Students I have trained have been very successful, with two of my trainees -- Va
 
 Relevant links:
 
-- [Jain and Cope bioRxiv](https://doi.org/10.1101/2023.09.26.559538)
-- [Akeju and Cope bioRxiv](https://doi.org/10.1101/2022.10.26.513858)
+- [Akeju and Cope Genome Biology and Evolution 2024](https://doi.org/10.1093/gbe/evae080)
+- [Jain and Cope Genome Biology and Evolution 2024](https://doi.org/10.1093/gbe/evae116)
