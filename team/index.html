@@ -5,65 +5,92 @@ categories:
  - team
 ---
 
+{% assign member = site.categories.team | first %}
+
 <div class="row">
 	<div class="col-lg-12">
 		<div class="title">
-			Current members
+			Contact & Social
 		</div>
 	</div>
 </div>
 
 <div class="bigspacer"></div>
 
-{% for member in site.categories.team reversed %}
-	{% if member.alumni != true %}
-    {% cycle 'add rows': '<div class="row">', '', '' %}
-		<div class="col-lg-4 memberbox">
-			<div class="media">
-  				<a class="float-left" href="{{ member.url }}">
-    				<img width=160 class="mr-3" src="{{ member.image }}">
-  				</a>
- 			 	<div class="media-body">
-    				<div class="head mb-1"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
-    				<p class="note">{{ member.position }}</p>
-  				</div>
-			</div>
-			<div class="bigspacer"></div>
-			<div class="bigspacer"></div>
-        </div>
-    {% cycle 'close rows': '', '', '</div>' %}
-    {% endif %}
-{% endfor %}
-{% cycle 'close rows': '', '</div>', '</div>' %}
-
 <div class="row">
-	<div class="col-lg-12">
-		<div class="title">
-			Past members
-		</div>
+	<div class="col-md-4 col-lg-3">
+		<img class="contact-photo" src="{{ member.image }}" alt="Photo of {{ member.title }}">
+	</div>
+	<div class="col-md-8 col-lg-9">
+		<div class="head">{{ member.title }}</div>
+		<p class="note">{{ member.position }}</p>
+		<div class="spacer"></div>
+
+		<ul class="contact-links">
+			{% if member.email %}
+			{% assign emailarray = member.email | split: '@' %}
+			<li>
+				<i class="fa fa-envelope-o fa-fw"></i>
+				<span class="contact-label">Email</span>
+				<span>{{ emailarray.first }}<span style="display:none">obfuscate</span>@{{ emailarray.last }}</span>
+			</li>
+			{% endif %}
+			{% if member.cv %}
+			<li>
+				<i class="fa fa-file-text-o fa-fw"></i>
+				<span class="contact-label">CV</span>
+				<a href="{{ member.cv }}">Download (PDF)</a>
+			</li>
+			{% endif %}
+			{% if member.scholar %}
+			<li>
+				<i class="fa fa-graduation-cap fa-fw"></i>
+				<span class="contact-label">Google Scholar</span>
+				<a href="https://scholar.google.com/citations?user={{ member.scholar }}">{{ member.title }}</a>
+			</li>
+			{% endif %}
+			{% if member.orcid %}
+			<li>
+				<i class="fa fa-id-card-o fa-fw"></i>
+				<span class="contact-label">ORCID</span>
+				<a href="https://orcid.org/{{ member.orcid }}">{{ member.orcid }}</a>
+			</li>
+			{% endif %}
+			{% if member.github %}
+			<li>
+				<i class="fa fa-github fa-fw"></i>
+				<span class="contact-label">GitHub</span>
+				<a href="https://github.com/{{ member.github }}">{{ member.github }}</a>
+			</li>
+			{% endif %}
+			{% if member.bluesky %}
+			<li>
+				<i class="fa fa-cloud fa-fw"></i>
+				<span class="contact-label">Bluesky</span>
+				<a href="https://bsky.app/profile/{{ member.bluesky }}">@{{ member.bluesky }}</a>
+			</li>
+			{% endif %}
+			{% if member.mastodon %}
+			<li>
+				<i class="fa fa-comments-o fa-fw"></i>
+				<span class="contact-label">Mastodon</span>
+				<a rel="me" href="{{ member.mastodon }}">{{ member.mastodon | remove: 'https://' }}</a>
+			</li>
+			{% endif %}
+			{% if member.twitter %}
+			<li>
+				<i class="fa fa-twitter fa-fw"></i>
+				<span class="contact-label">Twitter / X</span>
+				<a href="https://twitter.com/{{ member.twitter }}">@{{ member.twitter }}</a>
+			</li>
+			{% endif %}
+			{% if member.linkedin %}
+			<li>
+				<i class="fa fa-linkedin fa-fw"></i>
+				<span class="contact-label">LinkedIn</span>
+				<a href="https://www.linkedin.com/in/{{ member.linkedin }}">{{ member.linkedin }}</a>
+			</li>
+			{% endif %}
+		</ul>
 	</div>
 </div>
-
-<div class="bigspacer"></div>
-
-{% for member in site.categories.team reversed %}
-	{% if member.alumni == true %}
-    {% cycle 'add rows 2': '<div class="row">', '', '' %}
-		<div class="col-lg-4 memberbox">
-			<div class="media">
-  				<!--
-  				<a class="pull-left" href="{{ member.url }}">
-    				<img width=160 class="media-object" src="{{ member.image }}">
-  				</a>
-  				-->
- 			 	<div class="media-body">
-    				<div class="head media-heading"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
-    				<p class="note">{{ member.position }}</p>
-  				</div>
-			</div>
-			<div class="bigspacer"></div>
-        </div>
-    {% cycle 'close rows 2': '', '', '</div>' %}
-    {% endif %}
-{% endfor %}
-{% cycle 'close rows 2': '', '</div>', '</div>' %}

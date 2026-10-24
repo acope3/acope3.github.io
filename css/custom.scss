@@ -318,6 +318,44 @@ blockquote {
 
 }
 
+/* contact page */
+
+.contact-photo {
+	width: 100%;
+	max-width: 220px;
+	border-radius: 4px;
+	margin-bottom: 20px;
+}
+
+.contact-links {
+	list-style: none;
+	padding-left: 0;
+	font-size: 16px;
+	font-weight: 300;
+
+	li {
+		display: flex;
+		align-items: baseline;
+		flex-wrap: wrap;
+		padding: 10px 0;
+		border-bottom: 1px solid #eee;
+	}
+
+	li:last-child {
+		border-bottom: none;
+	}
+
+	.fa {
+		color: $primary;
+		margin-right: 10px;
+	}
+
+	.contact-label {
+		width: 140px;
+		color: $gray-light;
+	}
+}
+
 .talkbox {
 	min-height: 100px;
 }
